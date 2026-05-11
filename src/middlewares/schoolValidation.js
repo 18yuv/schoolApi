@@ -1,4 +1,4 @@
-import joi from "joi"
+import Joi from "joi"
 
 const schoolSchema = Joi.object({
   name:      Joi.string().min(3).max(255).required(),
