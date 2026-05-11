@@ -4,7 +4,7 @@ import { validateAddSchool, validateListSchools } from "../middlewares/schoolVal
 
 const schoolRouter = express.Router();
 
-schoolRouter.post("/addSchool", validateAddSchool, addSchool);
-schoolRouter.get("/listSchools", validateListSchools, listSchools);
+schoolRouter.post("/add-school", validateAddSchool, addSchool);
+schoolRouter.get("/list-schools", validateListSchools, listSchools);
 
 export default schoolRouter;

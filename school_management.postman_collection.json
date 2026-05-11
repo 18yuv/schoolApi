@@ -22,7 +22,7 @@
           }
         },
         "url": {
-          "raw": "http://localhost:5000/api/addSchool",
+          "raw": "http://localhost:5000/api/add-school",
           "protocol": "http",
           "host": [
             "localhost"
@@ -42,7 +42,7 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "http://localhost:5000/api/listSchools?latitude=30.5355&longitude=78.3910",
+          "raw": "http://localhost:5000/api/list-schools?latitude=30.5355&longitude=78.3910",
           "protocol": "http",
           "host": [
             "localhost"

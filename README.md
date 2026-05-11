@@ -111,7 +111,7 @@ Health check. Returns API info and available endpoints.
 
 ---
 
-### POST /addSchool
+### POST /add-school
 
 Adds a new school to the database.
 
@@ -164,7 +164,7 @@ Adds a new school to the database.
 
 ---
 
-### GET /listSchools
+### GET /list-schools
 
 Returns all schools sorted by proximity (nearest first) using the Haversine formula.
 
@@ -178,7 +178,7 @@ Returns all schools sorted by proximity (nearest first) using the Haversine form
 **Example:**
 
 ```
-GET /listSchools?latitude=27.1767&longitude=78.0081
+GET /list-schools?latitude=27.1767&longitude=78.0081
 ```
 
 **200 OK:**
