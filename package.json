@@ -1,0 +1,25 @@
+{
+  "name": "schoolapi",
+  "version": "1.0.0",
+  "description": "A RESTful API built with **Node.js**, **Express.js**, and **MySQL** for managing school data with proximity-based sorting.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "joi": "^18.2.1",
+    "mysql2": "^3.22.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "info": {
+    "_postman_id": "bc6cd463-669e-47e4-a7b2-b040e3fca20c",
+    "name": "school_management",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "44005437",
+    "_collection_link": "https://go.postman.co/collection/44005437-bc6cd463-669e-47e4-a7b2-b040e3fca20c?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "addSchool",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"KV\",\r\n  \"address\": \"Noida Sector 50\",\r\n  \"latitude\": 15.5700,\r\n  \"longitude\": 65.3272\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/addSchool",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "addSchool"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/listSchools?latitude=30.5355&longitude=78.3910",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "listSchools"
+          ],
+          "query": [
+            {
+              "key": "latitude",
+              "value": "30.5355"
+            },
+            {
+              "key": "longitude",
+              "value": "78.3910"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
