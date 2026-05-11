@@ -198,16 +198,14 @@ GET /listSchools?latitude=27.1767&longitude=78.0081
       "name": "Agra Public School",
       "address": "Sanjay Place, Agra, Uttar Pradesh 282002",
       "latitude": 27.1767,
-      "longitude": 78.0081,
-      "distance_km": 0
+      "longitude": 78.0081
     },
     {
       "id": 9,
       "name": "City Montessori School",
       "address": "Mahanagar, Lucknow, Uttar Pradesh 226006",
       "latitude": 26.8467,
-      "longitude": 80.9462,
-      "distance_km": 293.36
+      "longitude": 80.9462
     }
   ]
 }
