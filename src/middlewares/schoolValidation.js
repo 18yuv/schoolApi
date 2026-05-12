@@ -34,6 +34,6 @@ export function validateListSchools(req, res, next) {
       errors: error.details.map((d) => d.message),
     });
   }
-  req.query = value;
+  req.validatedQuery = value;
   next();
 }

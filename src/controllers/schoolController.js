@@ -48,7 +48,7 @@ export function addSchool(req, res){
 
 // List Schools API
 export function listSchools(req, res){
-  const { latitude, longitude } = req.query;
+  const { latitude, longitude } = req.validatedQuery;;
 
   if (!latitude || !longitude) {
     return res.status(400).json({
