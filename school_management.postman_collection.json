@@ -14,7 +14,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n  \"name\": \"KV\",\r\n  \"address\": \"Noida Sector 50\",\r\n  \"latitude\": 15.5700,\r\n  \"longitude\": 65.3272\r\n}",
+          "raw": "{\r\n  \"name\": \"DP School\",\r\n  \"address\": \"Noida Sector 50\",\r\n  \"latitude\": 15.5700,\r\n  \"longitude\": 65.3272\r\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -22,19 +22,99 @@
           }
         },
         "url": {
-          "raw": "http://localhost:5000/api/add-school",
-          "protocol": "http",
+          "raw": "https://schoolapi-production-hai.up.railway.app/api/add-school",
+          "protocol": "https",
           "host": [
-            "localhost"
+            "schoolapi-production-hai",
+            "up",
+            "railway",
+            "app"
           ],
-          "port": "5000",
           "path": [
             "api",
-            "addSchool"
+            "add-school"
           ]
         }
       },
-      "response": []
+      "response": [
+        {
+          "name": "addSchool",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"DP School\",\r\n  \"address\": \"Noida Sector 50\",\r\n  \"latitude\": 15.5700,\r\n  \"longitude\": 65.3272\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://schoolapi-production-hai.up.railway.app/api/add-school",
+              "protocol": "https",
+              "host": [
+                "schoolapi-production-hai",
+                "up",
+                "railway",
+                "app"
+              ],
+              "path": [
+                "api",
+                "add-school"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": ":status",
+              "value": 201
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "date",
+              "value": "Tue, 12 May 2026 07:20:24 GMT"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"43-1FzzWHduDloEL6I1to8m6W7D5mc\""
+            },
+            {
+              "key": "server",
+              "value": "railway-edge"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "x-railway-edge",
+              "value": "railway/asia-southeast1-eqsg3a"
+            },
+            {
+              "key": "x-railway-request-id",
+              "value": "owoq_VDHSo2FTFGiAQeqjw"
+            },
+            {
+              "key": "content-length",
+              "value": "67"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"message\": \"School added successfully\",\n    \"schoolId\": 2\n}"
+        }
+      ]
     },
     {
       "name": "New Request",
@@ -42,29 +122,110 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "http://localhost:5000/api/list-schools?latitude=30.5355&longitude=78.3910",
-          "protocol": "http",
+          "raw": "https://schoolapi-production-hai.up.railway.app/api/list-schools?latitude=28.61&longitude=77.20",
+          "protocol": "https",
           "host": [
-            "localhost"
+            "schoolapi-production-hai",
+            "up",
+            "railway",
+            "app"
           ],
-          "port": "5000",
           "path": [
             "api",
-            "listSchools"
+            "list-schools"
           ],
           "query": [
             {
               "key": "latitude",
-              "value": "30.5355"
+              "value": "28.61"
             },
             {
               "key": "longitude",
-              "value": "78.3910"
+              "value": "77.20"
             }
           ]
         }
       },
-      "response": []
+      "response": [
+        {
+          "name": "New Request",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://schoolapi-production-hai.up.railway.app/api/list-schools?latitude=28.61&longitude=77.20",
+              "protocol": "https",
+              "host": [
+                "schoolapi-production-hai",
+                "up",
+                "railway",
+                "app"
+              ],
+              "path": [
+                "api",
+                "list-schools"
+              ],
+              "query": [
+                {
+                  "key": "latitude",
+                  "value": "28.61"
+                },
+                {
+                  "key": "longitude",
+                  "value": "77.20"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": ":status",
+              "value": 200
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "date",
+              "value": "Tue, 12 May 2026 07:21:01 GMT"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"10d-E+93OTcYnrINbckG2Hrk92PY5Hs\""
+            },
+            {
+              "key": "server",
+              "value": "railway-edge"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "x-railway-edge",
+              "value": "railway/asia-southeast1-eqsg3a"
+            },
+            {
+              "key": "x-railway-request-id",
+              "value": "Yyt8Lxx8S0CGBNHb0ubPiw"
+            },
+            {
+              "key": "content-length",
+              "value": "269"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"count\": 2,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"KV School\",\n            \"address\": \"Noida Sector 50\",\n            \"latitude\": 15.57,\n            \"longitude\": 65.3272,\n            \"distance\": \"1894.32 KM\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"DP School\",\n            \"address\": \"Noida Sector 50\",\n            \"latitude\": 15.57,\n            \"longitude\": 65.3272,\n            \"distance\": \"1894.32 KM\"\n        }\n    ]\n}"
+        }
+      ]
     }
   ]
 }
